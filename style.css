@@ -1,0 +1,145 @@
+/*appliquer du style au body*/
+body{
+    background-color: rgb(18, 1, 61);
+    color:whitesmoke;
+    padding-bottom: 99px;
+    padding-top: 1px;
+    padding-right: 99px;
+    padding-left: 99px;
+    margin-top: 1px;
+    margin-bottom: 99px;
+    margin-left: 99px;
+    margin-right: 99px;
+    font-family: 'Roboto', sans-serif;
+
+    /*entete*/
+}
+.entete{
+    background-color: rgba(3, 3, 37, 0.71); /*Couleur de fond de l'entete*/
+    opacity: 0.7; /*transparence de la couleur de l'entete*/
+}
+.marque{ 
+    font-weight: bold; /*Mettre en gras le nom de la marque*/
+    margin-top: 1px; /*Mettre un espacement exterieur en hauteur entre le nom de la marque et le document html*/
+}
+.navigation{
+    text-align:right; /*Aligner a droite les barres de navigation*/
+    padding-top: -50px; /*Rapprocher l'espacement des barres de navigation au nom de la marque*/
+    font-size:small; /*Mettre la police au format petit*/
+    font-weight: bold; /*Mettre la police en gras*/
+    font-style: normal; /*Mettre la police au format normal*/
+    word-spacing: 9px; /*espacer les mots*/
+}
+/*lien de navigation*/
+.lien{
+    color:whitesmoke; /*Mettre une couleur*/
+    font-size:1.2em; /*Taille police*/
+    font-weight: bolder; 
+    text-decoration: none;
+}
+/*Appliquer un style sur les liens*/
+.lien:hover{
+    text-decoration: none;
+    font-style:italic;
+    font-size: 1.45em;
+    color:whitesmoke;
+}
+/*Appliquer un style sur le texte*/
+.service{
+    text-align: left;
+    text-align: justify;
+    color: burlywood;
+}
+/*Appliquer un style sur le texte*/
+.programme{
+    text-align: left;
+    text-align: justify;
+    color: burlywood;
+}
+/*Appliquer un style sur le texte*/
+.plan{
+    text-align: left;
+    text-align: justify;
+    padding-left: 18px; /*Mettre un espacement intérieur entre le texte et la bordure du document*/
+}
+.plan span{
+    font-style: italic; /*Appliquer spécifiquement un style à une partie du texte*/
+}
+.myself{
+    font-style: italic;
+}
+.auteur{
+    text-align: left;
+    text-align: justify;
+    padding-top: 27px;
+}
+.role{
+    text-align: left, justify;
+    margin-left: 18px ;
+}
+.bienvenue{
+    text-align: center;
+}
+span{
+    text-align: left;
+}
+.role span{
+    font-size:large;
+    font-weight: bold;
+    font-style: italic;
+    color: greenyellow;
+}
+.compétences{
+   width: 50%; /*Largeur de la bordure*/
+   min-width: 400px;
+}
+.depot{
+    color: burlywood;
+    text-align: left;
+}
+.auteur{
+    color: burlywood;
+  }
+/*bordures*/
+.bordures{
+   padding-left: 18px; /*Mettre un espacement pour le texte dans la bordure*/
+   border-style: groove; /*Style de la bordure*/
+   border-right-width: 1px; /*Style de la bordure de droite*/
+}
+/*Appliquer un style au texte*/
+.liste{
+    text-align: left;
+    padding-left:18px;
+}
+/*Appliquer un style à la liste ordonnee*/
+ol{
+    display : inline-block;
+    margin :auto;
+    text-align:left;
+    padding-left:18px;
+  }
+/*appliquer un style au formulaire*/
+  .formulaire{
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 18px;
+  }
+  /*numéroter les elements*/
+  .auteur::before{
+    content:'I. ';
+  }
+  .service::before{
+    content:'II. ';
+  }
+  .programme::before{
+    content:'III. ';
+  }
+  .depot::before{
+    content:'IV. ';
+  }

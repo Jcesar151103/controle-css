@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>cruph</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta charset="utf-8"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Entête de ma page-->
+        <div>
+            <header class="entete">
+                <h4 class="marque">cruph.com</h4>
+                <!--Barre de navigation-->
+                <nav class="navigation">
+                        <a class="lien" href="#accueil">Accueil</a>
+                        <a class="lien" href="#competence" target="#competence">Compétences</a>
+                        <a class="lien" href="#job">Métier</a>
+                        <a class="lien" href="#candidature">Candidature</a> 
+                </nav>
+            </header>
+        </div>
+            <br></br> <br></br>
+            <!--Premiere partie, mettre du texte-->
+            <h1 class="bienvenue">Bienvenue chez CRUPH</h1>
+            <div id="accueil">
+                <h2 class="auteur">Accueil</h2>
+            </div>
+                <p class="myself">Je suis Souleymane DIAITE, votre guide !</p>
+            <p class="role">Mon rôle est de vous montrer toute l'étendue de vos capacités. <br>Ma conviction est que chaque personne a un talent. <br></br><span>Allons découvrir le votre !</span></p>
+          <br></br>
+          <!--Deuxieme partie, mettre du texte et une liste ordonnee-->
+          <div id="competence">
+            <h2 class="service">Compétences</h2>
+        </div>
+            <div class="liste">
+            <p>Nous notons plusieurs types de compétences à savoir :</p>
+            <ol>
+                <li> La littérature</li>
+                <li> La science</li>
+                <li> La gestion</li>
+                <li> L'économie</li>
+            </ol>
+            <p>Chaque compétence correspond a un secteur de métier.</p>
+        </div>
+        <br></br>
+        <!--Troisieme partie, mettre du texte et des bordures-->
+        <div id="job">
+            <h2 class="programme">Métiers</h2>        
+            <p class="plan">Je vous présente les domaines de compétences adaptés à votre profil et vos compétences.<br>Mais, n'oubliez surtout pas que vous êtes votre propre atout.<br></br><span>Ci-dessous, vous pouvez voir quelques métiers.</span></p>
+            </div>
+            <br>
+            <div class="compétences">
+                <p class="bordures">Avocat<br></br><span>Si vous aimez la littérature.</span></p>
+                <p class="bordures">Ingénieur<br></br><span>Si vous êtes intéressés aux calculs scientifiques.</span></p>
+                <p class="bordures">Financier<br></br><span>Si vous aimez planifier l'argent.</span></p>
+                <p class="bordures">Economiste<br></br><span>Si vous aimez une gestion globale de l'argent.</span></p>
+            </div>
+        </div>
+        <!--Quatrieme partie, mettre un formulaire-->
+        <br></br>
+        <div id="candidature">
+            <h2 class="depot">Candidature</h2>
+        </div>
+        
+        <div class="formulaire">
+            <form class="myform">
+                <p>
+                    <label for="Form_FirstName">Prénom :</label>
+                    <input type="text" id="Form_FirstName" name="FirstName" size="36"/><br/>
+                </p>
+                <p>
+                    <label for="Form_LastName">Nom :</label>
+                    <input type="text" id="Form_LastName" name="LastName" size="36"/><br/>
+                </p>
+                <p>
+                    <label for="Form_Job">Métier :</label>
+                    <select id="Form_Job" name="job">
+                        <option value="none"> </option>
+                        <option value="avt">Avocat</option>
+                        <option value="ing">Ingénieur</option>
+                        <option value="fin">Financier</option>
+                        <option value="eco">Economiste</option>
+                    </select><br/>
+                </p>
+                <p>
+                    <label for="Form_Resume">Curriculum Vitae :</label>
+                    <input type="file" id="Form_Resume" name="Resume" size="36"/><br/>
+                </p>
+                <p>
+                    <label for="Form_Email">Email :</label>
+                    <input type="email" id="Form_Email" name="Email" size="36"/><br/>
+                </p>
+                <p>
+                <label for="Form_Contacts">N° tél :</label>
+                <input type="tel" id="Form_Contacts" name="Contatcs" size="36"/><br/>
+                </p>
+                <br/>
+                <button type="submit">Déposer</button>
+                <button type="submit">Effacer</button>
+            </form>
+        </div>
+    </body>
+</html>
